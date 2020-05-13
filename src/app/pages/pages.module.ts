@@ -9,6 +9,7 @@ import { SharedModule } from '../shared/shared.module';
 import { PAGES_ROUTES } from './pages.routes';
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component'
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
     declarations:[
@@ -17,7 +18,8 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
         ProgressComponent,
         Graficas1Component,
         IncrementadorComponent,
-        GraficoDonaComponent
+        GraficoDonaComponent,
+        AccountSettingsComponent
         ],
     exports:[
         DashboardComponent,
