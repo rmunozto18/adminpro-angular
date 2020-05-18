@@ -13,7 +13,7 @@
                                 <li><a >My Balance</a></li>
                                 <li><a >Inbox</a></li>
                                 <li><a routerLinkActive="active" [routerLink]="['/account-settings']">Account Setting</a></li>
-                                <li><a >Logout</a></li>
+                                <li><a routerLink="/login">Logout</a></li>
                             </ul>
                         </li>
                         <li class="nav-devider"></li>
@@ -21,7 +21,7 @@
                         <li *ngFor="let menu of _sidebar.menu"> <a class="has-arrow waves-effect waves-dark"  aria-expanded="false"><i [class]="menu.icono"></i><span class="hide-menu">{{menu.titulo}} <span class="label label-rouded label-themecolor pull-right">{{ menu.submenu.length }}</span></span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li *ngFor="let submenu of menu.submenu">
-                                    <a [routerLink]="[submenu.url]" routerlinkActive="active">{{ submenu.titulo }} </a>
+                                    <a [routerLink]="[submenu.url]" routerLinkActive="active">{{ submenu.titulo }} </a>
                                 </li>
                             </ul>
                         </li>
